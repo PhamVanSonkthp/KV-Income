@@ -89,7 +89,7 @@ class OrderController extends Controller
             'note' => $request->note,
         ]);
 
-        if(!empty($request->create_by)){
+        if(auth()->user()->is_admin != 0){
             $item->update([
                 'create_by' => auth()->id(),
             ]);
