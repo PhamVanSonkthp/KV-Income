@@ -146,6 +146,9 @@ Route::prefix('user')->group(function () {
         Route::prefix('order')->group(function () {
             Route::get('/', [OrderController::class, 'list']);
             Route::post('/', [OrderController::class, 'store']);
+            Route::put('/{id}', [OrderController::class, 'update']);
+            Route::delete('/{id}', [OrderController::class, 'delete']);
+            Route::get('/get/{id}', [OrderController::class, 'get']);
         });
 
         Route::prefix('report')->group(function () {

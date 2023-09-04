@@ -50,6 +50,14 @@ class OrderController extends Controller
 
         $results = $results->latest()->paginate(Formatter::getLimitRequest($request->limit))->appends(request()->query());
 
+        if(auth()->user()->is_admin == 1){
+            $results = $this->model->whereHas('user', function ($query){
+                $query->whereIn('branch_id', json_decode(auth()->user()->branch_id));
+            })->orderby('id', 'DESC');
+
+            $results = $results->latest()->paginate(Formatter::getLimitRequest($request->limit))->appends(request()->query());
+        }
+
         return response()->json($results);
     }
 
@@ -80,6 +88,12 @@ class OrderController extends Controller
             'user_id' => auth()->id(),
             'note' => $request->note,
         ]);
+
+        if(!empty($request->create_by)){
+            $item->update([
+                'create_by' => auth()->id(),
+            ]);
+        }
 
         $item->update([
             'code' => $item->id
@@ -118,6 +132,93 @@ class OrderController extends Controller
         $item->refresh();
 
         return response()->json($item);
+    }
+
+    public function update(Request $request, $id){
+
+        $item = $this->model->findById($id);
+
+        $dataUpdate = [];
+
+        if (!empty($request->code)) {
+            $dataUpdate['code'] = $request->code;
+        }
+
+        if (!empty($request->deposit)) {
+            $dataUpdate['deposit'] = $request->deposit;
+        }
+
+        if (!empty($request->service_charge)) {
+            $dataUpdate['service_charge'] = $request->service_charge + $request->deposit;
+        }
+
+
+        if (!empty($request->payment_type_id)) {
+            $dataUpdate['payment_type_id'] = $request->payment_type_id;
+        }
+
+        if (!empty($request->tips)) {
+            $setting = Setting::first();
+            $tips = $request->tips * optional($setting)->percent_tips;
+            $dataUpdate['tips'] = $tips;
+        }
+
+        if (!empty($request->note)) {
+            $dataUpdate['note'] = $request->note;
+        }
+
+        $item->update($dataUpdate);
+
+        $files = $request->file('images');
+
+        if (!empty($files) && is_array($files)){
+
+            foreach ($files as $file){
+
+                $itemImage = Image::create([
+                    'uuid' => Helper::randomString(),
+                    'table' => $this->model->getTableName(),
+                    'image_path' => "waiting",
+                    'image_name' => "waiting",
+                    'relate_id' => $item->id,
+                ]);
+
+                $dataUploadFeatureImage = StorageImageTrait::storageTraitUpload($request, $file,'multiple', $itemImage->id);
+
+                if (empty($dataUploadFeatureImage) || empty($dataUploadFeatureImage['file_path'])){
+                    $itemImage->delete();
+                }else{
+                    $dataUpdate = [
+                        'image_path' => $dataUploadFeatureImage['file_path'],
+                        'image_name' => $dataUploadFeatureImage['file_name'],
+                    ];
+
+                    $itemImage->update($dataUpdate);
+                }
+
+            }
+        }
+
+        $item->refresh();
+
+        return $item;
+    }
+
+    public function delete(Request $request, $id){
+
+        if (auth()->user()->is_admin == 0){
+            return response()->json(Helper::errorAPI(99, [],"unauthorized"), 400);
+        }
+
+        $item = $this->model->deleteByQuery($request, $id);
+
+        return $item;
+    }
+
+    public function get($id){
+        $item = $this->model->find($id);
+
+        return $item;
     }
 
     public function storeNotAuth(Request $request)
