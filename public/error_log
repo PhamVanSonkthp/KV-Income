@@ -1,0 +1,231 @@
+[11-Jul-2023 23:41:53 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:41:55 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:43:21 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:47:58 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:49:20 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:50:57 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:50:58 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:51:09 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:51:23 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:51:30 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:51:43 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:51:44 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:52:15 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:52:16 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:52:34 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:53:02 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:53:03 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:53:23 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:53:46 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:54:06 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:55:18 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:55:47 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:55:48 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:56:11 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:56:21 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:56:31 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:56:40 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:56:43 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:57:24 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:57:43 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[11-Jul-2023 23:58:39 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[12-Jul-2023 00:00:48 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
+[12-Jul-2023 00:01:02 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'PDO' not found in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1474
+Stack trace:
+#0 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate\Database\Connection::getResolver('mysql')
+#1 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\Database\Connectors\ConnectionFactory->createConnection('mysql', Object(Closure), 'sropdyig_db', '', Array)
+#2 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#3 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(140): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager in /home/sropdyig/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1474
