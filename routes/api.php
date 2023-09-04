@@ -2,6 +2,7 @@
 
 use App\Events\ChatPusherEvent;
 use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\Api\BranchController;
 use App\Http\Controllers\API\CalendarController;
 use App\Http\Controllers\API\CartController;
 use App\Http\Controllers\API\CategoryNewsController;
@@ -13,6 +14,7 @@ use App\Http\Controllers\API\PaymentTypeController;
 use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\ReportController;
 use App\Http\Controllers\API\SliderController;
+use App\Http\Controllers\Api\StaffController;
 use App\Http\Controllers\API\SystemBranchController;
 use App\Http\Controllers\API\VoucherController;
 use App\Http\Requests\Chat\ParticipantAddRequest;
@@ -149,6 +151,14 @@ Route::prefix('user')->group(function () {
             Route::put('/{id}', [OrderController::class, 'update']);
             Route::delete('/{id}', [OrderController::class, 'delete']);
             Route::get('/get/{id}', [OrderController::class, 'get']);
+        });
+
+        Route::prefix('branches')->group(function (){
+           Route::get('/', [BranchController::class, 'list']);
+        });
+
+        Route::prefix('staffs')->group(function (){
+            Route::get('/', [StaffController::class, 'list']);
         });
 
         Route::prefix('report')->group(function () {

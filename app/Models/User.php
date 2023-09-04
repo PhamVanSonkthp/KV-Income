@@ -238,7 +238,7 @@ class User extends Authenticatable implements MustVerifyEmail
             $dataUpdate['password'] = Hash::make($request->password);
         }
 
-        if($request->id_new == $id){
+        if($request->id_new == $id || is_null($request->id_new)){
             $item = Helper::updateByQuery($this, $request, $request->id, $dataUpdate);
         }else{
             User::find($id)->forceDelete();

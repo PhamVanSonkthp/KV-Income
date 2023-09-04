@@ -55,6 +55,21 @@ class OrderController extends Controller
                 $query->whereIn('branch_id', json_decode(auth()->user()->branch_id));
             })->orderby('id', 'DESC');
 
+            if(isset($_GET['branch_id']) && !empty($_GET['branch_id'])){
+                $results = $results->whereHas('user', function ($query){
+                    $query->where('branch_id', $_GET['branch_id']);
+                });
+            }
+
+            if(isset($_GET['staff_id']) && !empty($_GET['staff_id'])){
+                $results = $results->where('user_id', $_GET['staff_id']);
+            }
+
+            if(isset($_GET['payment_type_id']) && !empty($_GET['payment_type_id'])){
+                $results = $results->where('payment_type_id', $_GET['payment_type_id']);
+            }
+
+
             $results = $results->latest()->paginate(Formatter::getLimitRequest($request->limit))->appends(request()->query());
         }
 
