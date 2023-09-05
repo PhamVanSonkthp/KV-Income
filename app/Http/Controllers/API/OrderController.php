@@ -69,6 +69,18 @@ class OrderController extends Controller
                 $results = $results->where('payment_type_id', $_GET['payment_type_id']);
             }
 
+            if(isset($_GET['start']) && !empty($_GET['start'])){
+                $results = $results->whereDate('created_at', '>=', $_GET['start']);
+            }
+
+            if(isset($_GET['end']) && !empty($_GET['end'])){
+                $results = $results->whereDate('created_at', '<=', $_GET['end']);
+            }
+
+            if(isset($_GET['search_query']) && !empty($_GET['search_query'])){
+                $results = $results->where('id', 'LIKE', '%'.$_GET['search_query'].'%')->orWhere('code', 'LIKE', '%'.$_GET['search_query'].'%');
+            }
+
 
             $results = $results->latest()->paginate(Formatter::getLimitRequest($request->limit))->appends(request()->query());
         }
