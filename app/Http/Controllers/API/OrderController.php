@@ -107,12 +107,13 @@ class OrderController extends Controller
 
         $deposit = $request->deposit ?? 0;
 
+
         $item = Order::create([
             'service_charge' => ($request->service_charge ?? 0) + $deposit,
             'tips' => $tips ?? 0,
             'payment_type_id' => $request->payment_type_id,
             'deposit' => $deposit,
-            'user_id' => auth()->id(),
+            'user_id' => auth()->user()->is_admin != 0 ? $request->user_id : auth()->id(),
             'note' => $request->note,
         ]);
 
