@@ -331,4 +331,10 @@ class OrderController extends Controller
         return response()->json($item);
     }
 
+    public function deleteImage($id){
+        Image::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'Xoá thành công']);
+    }
+
 }
