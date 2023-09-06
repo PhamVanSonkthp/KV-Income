@@ -81,6 +81,7 @@ class Order extends Model implements Auditable
         $array['image_path_avatar'] = $this->avatar();
         $array['path_images'] = $this->images;
         $array['payment_type'] = $this->paymentType;
+        $array['user'] = $this->user;
         return $array;
     }
 

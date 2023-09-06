@@ -174,6 +174,10 @@ Route::prefix('user')->group(function () {
             Route::post('/', [VoucherController::class, 'store']);
             Route::post('/check-with-carts', [VoucherController::class, 'checkWithCarts']);
         });
+
+        Route::prefix('image')->group(function (){
+            Route::delete('/{id}', [OrderController::class, 'deleteImage']);
+        });
     });
 
 
