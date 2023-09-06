@@ -88,6 +88,7 @@ class User extends Authenticatable implements MustVerifyEmail
         $array = parent::toArray();
         $array['image_path_avatar'] = $this->avatar();
         $array['path_images'] = $this->images;
+        $array['branch'] = $this->branch;
         return $array;
     }
 
