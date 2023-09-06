@@ -2,7 +2,7 @@
 
 use App\Events\ChatPusherEvent;
 use App\Http\Controllers\API\AuthController;
-use App\Http\Controllers\Api\BranchController;
+use App\Http\Controllers\API\BranchController;
 use App\Http\Controllers\API\CalendarController;
 use App\Http\Controllers\API\CartController;
 use App\Http\Controllers\API\CategoryNewsController;
@@ -14,7 +14,7 @@ use App\Http\Controllers\API\PaymentTypeController;
 use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\ReportController;
 use App\Http\Controllers\API\SliderController;
-use App\Http\Controllers\Api\StaffController;
+use App\Http\Controllers\API\StaffController;
 use App\Http\Controllers\API\SystemBranchController;
 use App\Http\Controllers\API\VoucherController;
 use App\Http\Requests\Chat\ParticipantAddRequest;
