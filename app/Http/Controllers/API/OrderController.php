@@ -50,7 +50,7 @@ class OrderController extends Controller
 
         $results = $results->latest()->paginate(Formatter::getLimitRequest($request->limit))->appends(request()->query());
 
-        if(auth()->user()->is_admin == 1){
+        if(auth()->user()->is_admin != 0){
             $results = $this->model->whereHas('user', function ($query){
                 $query->whereIn('branch_id', json_decode(auth()->user()->branch_id));
             })->orderby('id', 'DESC');
