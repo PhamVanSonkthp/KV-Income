@@ -92,14 +92,18 @@ class UserController extends Controller
         $validator = Validator::make($request->all(),[
            'name' => 'required',
            'password' => 'required|min:6',
-           'branch' => 'required',
+           'phone' => 'required|numeric|min:10|unique:users,phone',
            'admin_group' => 'required',
+            'branch' => 'required',
         ],[
             'name.required' => 'Name is not empty',
             'password.required' => 'Password is not empty',
             'password.min' => 'Password is must be at least 6 characters',
-            'branch.required' => 'Please choose at least 1 branch',
+            'phone.required' => 'Phone is not empty',
+            'phone.numeric' => 'Phone numbers only accept numeric values',
+            'phone.min' => 'Phone is must be at least 10 characters',
             'admin_group.required' => 'Please choose at least 1 admin group',
+            'branch.required' => 'Please choose at least 1 branch',
         ]);
         if($validator->fails()){
             return response()->json([

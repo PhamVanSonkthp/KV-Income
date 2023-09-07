@@ -26,13 +26,8 @@
                     <input type="password" name="password" id="password" class="form-control input__field" placeholder="Enter password">
                 </div>
                 <div class="form-group">
-                    <label for="branch" class="fw-bold">Branch</label>
-                    @foreach($branchs as $branch)
-                        <div class="branch__item">
-                            <input type="checkbox" value="{{ $branch->id }}" name="branch" id="branch{{ $branch->id }}">
-                            <label for="branch{{ $branch->id }}">{{ $branch->name }}</label>
-                        </div>
-                    @endforeach
+                    <label for="phone" class="fw-bold">Phone</label>
+                    <input type="text" id="phone" name="phone" class="form-control input__field" placeholder="Enter Phone">
                 </div>
                 <div class="form-group">
                     <label for="admin_groups" class="fw-bold">Admin groups </label>
@@ -41,6 +36,15 @@
                             <option value="{{ $role->id }}">{{ $role->name }}</option>
                         @endforeach
                     </select>
+                </div>
+                <div class="form-group">
+                    <label for="branch" class="fw-bold">Branch</label>
+                    @foreach($branchs as $branch)
+                        <div class="branch__item">
+                            <input type="checkbox" value="{{ $branch->id }}" name="branch" id="branch{{ $branch->id }}">
+                            <label for="branch{{ $branch->id }}">{{ $branch->name }}</label>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -121,6 +125,7 @@
             {
                 'name' : $('input[name="name"]').val(),
                 'password' : $('input[name="password"]').val(),
+                'phone' : $('input[name="phone"]').val(),
                 'branch' : branch,
                 'admin_group' : $('select[name="admin_groups[]"]').val(),
                 'is_admin' : 1,

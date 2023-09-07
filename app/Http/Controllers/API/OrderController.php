@@ -180,6 +180,9 @@ class OrderController extends Controller
             $dataUpdate['service_charge'] = $request->service_charge + $request->deposit;
         }
 
+        if (!empty($request->staff_id)) {
+            $dataUpdate['user_id'] = $request->staff_id;
+        }
 
         if (!empty($request->payment_type_id)) {
             $dataUpdate['payment_type_id'] = $request->payment_type_id;

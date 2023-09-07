@@ -214,6 +214,7 @@ class User extends Authenticatable implements MustVerifyEmail
             $dataUpdate = [
                 'name' => $request->name == '' ? $item->name : $request->name,
                 'branch_id' => $request->branch == '' ? $item->branch_id : json_encode($request->branch),
+                'phone' => $request->phone == '' ? $item->phone : $request->phone,
             ];
         }else{
             $dataUpdate = [
@@ -227,7 +228,7 @@ class User extends Authenticatable implements MustVerifyEmail
                 'branch_id' => $request->branch == '' ? $item->branch_id : $request->branch,
             ];
         }
-
+        
 
         if($this->isAdmin() || $this->isEmployee()){
             $dataUpdate['role_id'] = json_encode($request->admin_group);

@@ -23,6 +23,18 @@
                     <input type="text" id="name" class="form-control input__field" value="{{ $item->name }}">
                 </div>
                 <div class="form-group">
+                    <label for="phone" class="fw-bold">Phone</label>
+                    <input type="text" id="phone" class="form-control input__field" value="{{ $item->phone }}">
+                </div>
+                <div class="form-group">
+                    <label for="branch" class="fw-bold">Branch</label>
+                    <div class="form-control">
+                        @foreach($branchs as $branch)
+                            <p>{{ in_array($branch->id, $arr_branch) ? $branch->name : ''  }}</p>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="form-group">
                     <div class="row">
                         <div class="form-group" style="padding-top: 0">
                             <label for="time" class="fw-bold">Create time </label>
@@ -40,14 +52,6 @@
                             <label for="create_by" class="fw-bold">Admin user create</label>
                             <input type="text" id="create_by" class="form-control input__field" value="{{ optional($item->user)->name }}">
                         </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="branch" class="fw-bold">Branch</label>
-                    <div class="form-control">
-                        @foreach($branchs as $branch)
-                            <p>{{ in_array($branch->id, $arr_branch) ? $branch->name : ''  }}</p>
-                        @endforeach
                     </div>
                 </div>
             </div>
