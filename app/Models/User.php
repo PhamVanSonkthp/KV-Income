@@ -89,6 +89,17 @@ class User extends Authenticatable implements MustVerifyEmail
         $array['image_path_avatar'] = $this->avatar();
         $array['path_images'] = $this->images;
         $array['branch'] = $this->branch;
+
+        if ($this->is_admin == 2){
+
+            $branch_ids = [];
+            foreach (SystemBranch::all() as $systemBranch){
+                $branch_ids[] = $systemBranch->id . "";
+            }
+            $array['branch_id'] = json_encode($branch_ids);
+        }
+
+
         return $array;
     }
 
@@ -228,7 +239,7 @@ class User extends Authenticatable implements MustVerifyEmail
                 'branch_id' => $request->branch == '' ? $item->branch_id : $request->branch,
             ];
         }
-        
+
 
         if($this->isAdmin() || $this->isEmployee()){
             $dataUpdate['role_id'] = json_encode($request->admin_group);

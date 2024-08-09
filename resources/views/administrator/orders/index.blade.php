@@ -43,7 +43,7 @@
                         <tbody>
                         @foreach($items as $item)
 
-                            <tr id="{{ $item->id }}" style="background-color: {{$item->backgroundColor()}}">
+                            <tr id="{{ $item->id }}" style="background-color: {{$item->backgroundColor(false)}}">
                                 <th scope="row">
                                     <label class="control control--checkbox">
                                         <input type="checkbox" value="{{ $item->id }}" class="checkbox-delete-item">
