@@ -42,7 +42,8 @@
                         </thead>
                         <tbody>
                         @foreach($items as $item)
-                            <tr id="{{ $item->id }}" style="background-color: {{ !empty($item->note) ? '#ff000033' : '' }}">
+
+                            <tr id="{{ $item->id }}" style="background-color: {{$item->backgroundColor()}}">
                                 <th scope="row">
                                     <label class="control control--checkbox">
                                         <input type="checkbox" value="{{ $item->id }}" class="checkbox-delete-item">

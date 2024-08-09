@@ -19,7 +19,16 @@ class OrderExport implements FromCollection, WithMapping, WithHeadings, WithEven
     */
     public function collection()
     {
-        $order = Order::select('id', 'code', 'created_at', 'orders.user_id', 'orders.service_charge', 'orders.tips')->latest()->get();
+        $query = Order::select('id', 'code', 'created_at', 'orders.user_id', 'orders.service_charge', 'orders.tips', 'orders.payment_type_id', 'orders.deposit', 'note');
+        if(request('begin')){
+            $query = $query->whereDate('created_at', '>=', request('begin'));
+        }
+
+        if(request('end')){
+            $query = $query->whereDate('created_at', '<=', request('end'));
+        }
+        $order = $query->latest()->get();
+
         return $order;
     }
 
@@ -33,6 +42,9 @@ class OrderExport implements FromCollection, WithMapping, WithHeadings, WithEven
             optional($row->user)->name,
             number_format($row->service_charge),
             number_format($row->tips),
+            optional($row->payment)->name,
+            number_format($row->deposit),
+            $row->note
         ];
     }
 
@@ -46,6 +58,9 @@ class OrderExport implements FromCollection, WithMapping, WithHeadings, WithEven
             'Staff',
             'Service chage',
             'Tips',
+            'Payment',
+            'Deposit',
+            'Note'
         ];
     }
 
@@ -53,13 +68,13 @@ class OrderExport implements FromCollection, WithMapping, WithHeadings, WithEven
     {
         return [
             AfterSheet::class => function (AfterSheet $event) {
-                $event->sheet->getDelegate()->getStyle('A1:G1')->applyFromArray([
+                $event->sheet->getDelegate()->getStyle('A1:J1')->applyFromArray([
                     'font' => [
                         'bold' => true,
                     ]
                 ]);
 
-                $event->sheet->setAutoFilter('A1:G1');
+                $event->sheet->setAutoFilter('A1:J1');
             }
         ];
     }

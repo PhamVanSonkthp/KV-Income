@@ -39,7 +39,7 @@
 
             @if((strpos(route('administrator.employees.index'), $_SERVER['REQUEST_URI'])) || (strpos($_SERVER['REQUEST_URI'], 'employees?') !== false) || (strpos(route('administrator.orders.index'), $_SERVER['REQUEST_URI'])) || (strpos($_SERVER['REQUEST_URI'], 'orders?') !== false))
             <li class="page-item">
-                <a class="page-link text-primary" href="{{ route('administrator.'.$prefixView.'.export') }}">
+                <a class="page-link text-primary" href="{{ route('administrator.'.$prefixView.'.export', ['begin' => request('begin'), 'end' => request('end')]) }}">
                     Down file
                     <i class="fa-solid fa-cloud-arrow-down text-secondary ms-2"></i>
                 </a>
@@ -64,7 +64,7 @@
             <span class="page-item total__value">of {{ $paginator->lastPage() }}</span>
             @if((strpos(route('administrator.employees.index'), $_SERVER['REQUEST_URI'])) || (strpos($_SERVER['REQUEST_URI'], 'employees?') !== false) || (strpos(route('administrator.orders.index'), $_SERVER['REQUEST_URI'])) || (strpos($_SERVER['REQUEST_URI'], 'orders?') !== false))
             <li class="page-item">
-                <a class="page-link text-primary" href="{{ route('administrator.'.$prefixView.'.export') }}">
+                <a class="page-link text-primary" href="{{ route('administrator.'.$prefixView.'.export', ['begin' => request('begin'), 'end' => request('end')]) }}">
                     Down file
                     <i class="fa-solid fa-cloud-arrow-down text-secondary ms-2"></i>
                 </a>

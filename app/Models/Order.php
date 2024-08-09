@@ -30,6 +30,16 @@ class Order extends Model implements Auditable
 
     // begin
 
+    public function backgroundColor(){
+        if (!empty($this->note) ) return  '#ff000033';
+
+        if ($this->deposit == 0 ) return  '#fff18633';
+
+        if ($this->payment_type_id == 6 ) return  '#a4ff8e33';
+
+        return '#ffffff';
+    }
+
     public function branch(){
         return $this->belongsTo(SystemBranch::class);
     }
@@ -82,6 +92,7 @@ class Order extends Model implements Auditable
         $array['path_images'] = $this->images;
         $array['payment_type'] = $this->paymentType;
         $array['user'] = $this->user;
+        $array['background_color'] = $this->backgroundColor();
         return $array;
     }
 
