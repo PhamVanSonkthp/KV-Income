@@ -31,11 +31,11 @@ class Order extends Model implements Auditable
     // begin
 
     public function backgroundColor($isAPI = true){
-        if (!empty($this->note) ) return  '#ff000033';
+        if (!empty($this->note) ) return  '#ffb2b2';
 
-        if ($this->deposit == 0 ) return  '#fff18633';
+        if ($this->deposit == 0 ) return  '#bbbb00';
 
-        if ($this->payment_type_id == 6 ) return  '#a4ff8e33';
+        if ($this->payment_type_id == 6 ) return  '#a3ffc3';
 
         if ($isAPI) return '#F9A701';
 
